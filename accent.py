@@ -29,7 +29,6 @@ import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
 
-
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
@@ -57,6 +56,7 @@ thisExp = data.ExperimentHandler(name=expName, version='',
     originPath='/Users/ajnafannikertesz/Desktop/Accents /accent2.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
+    
 # save a log file for detail verbose info
 logFile = logging.LogFile(filename+'.log', level=logging.EXP)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -67,19 +67,22 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 # Start Code - component code to be run after the window creation
 
 # --- Setup the Window ---
+#TODO: make fullScr back to True
 win = visual.Window(
-    size=(1024, 768), fullscr=True, screen=0, 
+    size=(1024, 768), fullscr=False, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
 win.mouseVisible = False
+
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
 if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+    
 # --- Setup input devices ---
 ioConfig = {}
 
@@ -128,10 +131,12 @@ routineTimer = core.Clock()  # to track time remaining of each (possibly non-sli
 # --- Prepare to start Routine "Welcome" ---
 continueRoutine = True
 routineForceEnded = False
+
 # update component parameters for each repeat
 key_resp.keys = []
 key_resp.rt = []
 _key_resp_allKeys = []
+
 # keep track of which components have finished
 WelcomeComponents = [Welcome_text, key_resp]
 for thisComponent in WelcomeComponents:
@@ -141,6 +146,7 @@ for thisComponent in WelcomeComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+        
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
@@ -148,6 +154,7 @@ frameN = -1
 
 # --- Run Routine "Welcome" ---
 while continueRoutine:
+    
     # get current time
     t = routineTimer.getTime()
     tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -243,6 +250,7 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
+# Instructional - Part 1
 # --- Run Routine "Part1" ---
 while continueRoutine:
     # get current time
@@ -309,6 +317,7 @@ while continueRoutine:
 for thisComponent in Part1Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+        
 # check responses
 if key_resp_2.keys in ['', [], None]:  # No response was made
     key_resp_2.keys = None
@@ -316,22 +325,32 @@ thisExp.addData('key_resp_2.keys',key_resp_2.keys)
 if key_resp_2.keys != None:  # we had a response
     thisExp.addData('key_resp_2.rt', key_resp_2.rt)
 thisExp.nextEntry()
+
 # the Routine "Part1" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# set up handler to look after randomisation of conditions etc
+# Experiment starts here
+# set up handler to look after randomization of conditions etc
 trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('NZ_words.xlsx'),
     seed=None, name='trials')
+    
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
+
 # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
 if thisTrial != None:
     for paramName in thisTrial:
         exec('{} = thisTrial[paramName]'.format(paramName))
+        
+# a set of words that we should be seeing
+# req_words = [ ... 120 words ... ]
 
+# randomly choose a word from NZ_words
 for thisTrial in trials:
+    # hey! if all 120 words were observed already, stop and progress to
+    
     currentLoop = trials
     # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
     if thisTrial != None:
@@ -341,12 +360,20 @@ for thisTrial in trials:
     # --- Prepare to start Routine "NZ_words" ---
     continueRoutine = True
     routineForceEnded = False
+    
     # update component parameters for each repeat
     NZ_word_resp.keys = []
     NZ_word_resp.rt = []
     _NZ_word_resp_allKeys = []
-    NZ.setSound('NZ_words.xlsx', hamming=True)
+    
+    print(thisTrial)
+    # check has this word been seen yet?
+    # if yes, skip this trial 
+    # if no, progress trial
+    
+    NZ.setSound(thisTrial['file'], hamming=True)
     NZ.setVolume(1.0, log=False)
+    
     # keep track of which components have finished
     NZ_wordsComponents = [NZ_word_resp, NZ]
     for thisComponent in NZ_wordsComponents:
@@ -356,6 +383,7 @@ for thisTrial in trials:
         thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+            
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
@@ -367,12 +395,15 @@ for thisTrial in trials:
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *NZ_word_resp* updates
         waitOnFlip = False
+        
         if NZ_word_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            
             # keep track of start time/frame for later
             NZ_word_resp.frameNStart = frameN  # exact frame index
             NZ_word_resp.tStart = t  # local t and not account for scr refresh
@@ -381,23 +412,29 @@ for thisTrial in trials:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'NZ_word_resp.started')
             NZ_word_resp.status = STARTED
+            
             # keyboard checking is just starting
             waitOnFlip = True
             win.callOnFlip(NZ_word_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(NZ_word_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            
         if NZ_word_resp.status == STARTED and not waitOnFlip:
             theseKeys = NZ_word_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
             _NZ_word_resp_allKeys.extend(theseKeys)
+            
             if len(_NZ_word_resp_allKeys):
                 NZ_word_resp.keys = _NZ_word_resp_allKeys[-1].name  # just the last key pressed
                 NZ_word_resp.rt = _NZ_word_resp_allKeys[-1].rt
+                
                 # was this correct?
                 if (NZ_word_resp.keys == str(correct)) or (NZ_word_resp.keys == correct):
                     NZ_word_resp.corr = 1
                 else:
                     NZ_word_resp.corr = 0
+                    
                 # a response ends the routine
                 continueRoutine = False
+                
         # start/stop NZ
         if NZ.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
