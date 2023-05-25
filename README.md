@@ -1,1 +1,13 @@
 # Accents
+
+
+Accent2 is the complete study with two parts
+
+Part 1: 
+  Randmized living and non-living words in 3 accents (US, NZ, TR) -> 120 in total (no word should be heard more than once)
+   Task: categorize as living (a) or non-living (l)
+
+
+Part 2: 
+  Randomized passages in 3 accents (US, NZ, TR) -> 3 in total (no passage should be heard more than once)
+  Task: judgment on slider about 1)beliveablity, 2) nice, smart, trustworthiness
