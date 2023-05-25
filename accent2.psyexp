@@ -401,7 +401,7 @@
         <Param val="True" valType="bool" updates="constant" name="hamming"/>
         <Param val="sample_sounds" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="samples/samples.xlsx" valType="str" updates="constant" name="sound"/>
+        <Param val="samples.xlsx" valType="str" updates="set every repeat" name="sound"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
