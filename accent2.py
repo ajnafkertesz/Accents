@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on Wed May 24 19:22:48 2023
+    on Thu May 25 09:50:03 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -107,7 +107,7 @@ key_resp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "Part1" ---
 text = visual.TextStim(win=win, name='text',
-    text='Part 1\n\nIn this first part of the study you will hear words that are either living or non-living things. For living things press "L" and for non-living things press "N". This is a study measuring response time, so try to be as fast as possible. If you make an error you can correct yourself and the button you pressed last will be recorded.',
+    text='Part 1\n\nIn this first part of the study you will hear words that are either living or non-living things. For living things press "A" and for non-living things press "L". This is a study measuring response time, so try to be as fast as possible. If you make an error you can correct yourself and the button you pressed last will be recorded.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -115,11 +115,54 @@ text = visual.TextStim(win=win, name='text',
     depth=0.0);
 key_resp_2 = keyboard.Keyboard()
 
-# --- Initialize components for Routine "NZ_words" ---
-NZ_word_resp = keyboard.Keyboard()
-NZ = sound.Sound('A', secs=-1, stereo=True, hamming=True,
-    name='NZ')
-NZ.setVolume(1.0)
+# --- Initialize components for Routine "words" ---
+word_resp = keyboard.Keyboard()
+wordlist = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+    name='wordlist')
+wordlist.setVolume(1.0)
+
+# --- Initialize components for Routine "Part2" ---
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='Part 2\n\nIn this part of the study you will hear three brief passages. After listening to each passage you will be asked several questions about the content and your impressions of it.',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_3 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "passages" ---
+passagelist = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+    name='passagelist')
+passagelist.setVolume(1.0)
+belive = visual.Slider(win=win, name='belive',
+    startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=None,
+    labels=None, ticks=(1, 2, 3, 4, 5), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.05,
+    flip=False, ori=0.0, depth=-1, readOnly=False)
+nice = visual.Slider(win=win, name='nice',
+    startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=None,
+    labels=None, ticks=(1, 2, 3, 4, 5), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.05,
+    flip=False, ori=0.0, depth=-2, readOnly=False)
+smart = visual.Slider(win=win, name='smart',
+    startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=None,
+    labels=None, ticks=(1, 2, 3, 4, 5), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.05,
+    flip=False, ori=0.0, depth=-3, readOnly=False)
+trustworthy = visual.Slider(win=win, name='trustworthy',
+    startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=None,
+    labels=None, ticks=(1, 2, 3, 4, 5), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.05,
+    flip=False, ori=0.0, depth=-4, readOnly=False)
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -322,7 +365,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('NZ_words.xlsx'),
+    trialList=data.importConditions('words.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -338,18 +381,18 @@ for thisTrial in trials:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
     
-    # --- Prepare to start Routine "NZ_words" ---
+    # --- Prepare to start Routine "words" ---
     continueRoutine = True
     routineForceEnded = False
     # update component parameters for each repeat
-    NZ_word_resp.keys = []
-    NZ_word_resp.rt = []
-    _NZ_word_resp_allKeys = []
-    NZ.setSound('NZ_words.xlsx', hamming=True)
-    NZ.setVolume(1.0, log=False)
+    word_resp.keys = []
+    word_resp.rt = []
+    _word_resp_allKeys = []
+    wordlist.setSound('words.xlsx', hamming=True)
+    wordlist.setVolume(1.0, log=False)
     # keep track of which components have finished
-    NZ_wordsComponents = [NZ_word_resp, NZ]
-    for thisComponent in NZ_wordsComponents:
+    wordsComponents = [word_resp, wordlist]
+    for thisComponent in wordsComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -361,7 +404,7 @@ for thisTrial in trials:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "NZ_words" ---
+    # --- Run Routine "words" ---
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -370,43 +413,43 @@ for thisTrial in trials:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *NZ_word_resp* updates
+        # *word_resp* updates
         waitOnFlip = False
-        if NZ_word_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if word_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            NZ_word_resp.frameNStart = frameN  # exact frame index
-            NZ_word_resp.tStart = t  # local t and not account for scr refresh
-            NZ_word_resp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(NZ_word_resp, 'tStartRefresh')  # time at next scr refresh
+            word_resp.frameNStart = frameN  # exact frame index
+            word_resp.tStart = t  # local t and not account for scr refresh
+            word_resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(word_resp, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'NZ_word_resp.started')
-            NZ_word_resp.status = STARTED
+            thisExp.timestampOnFlip(win, 'word_resp.started')
+            word_resp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(NZ_word_resp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(NZ_word_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if NZ_word_resp.status == STARTED and not waitOnFlip:
-            theseKeys = NZ_word_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
-            _NZ_word_resp_allKeys.extend(theseKeys)
-            if len(_NZ_word_resp_allKeys):
-                NZ_word_resp.keys = _NZ_word_resp_allKeys[-1].name  # just the last key pressed
-                NZ_word_resp.rt = _NZ_word_resp_allKeys[-1].rt
+            win.callOnFlip(word_resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(word_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if word_resp.status == STARTED and not waitOnFlip:
+            theseKeys = word_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
+            _word_resp_allKeys.extend(theseKeys)
+            if len(_word_resp_allKeys):
+                word_resp.keys = _word_resp_allKeys[-1].name  # just the last key pressed
+                word_resp.rt = _word_resp_allKeys[-1].rt
                 # was this correct?
-                if (NZ_word_resp.keys == str(correct)) or (NZ_word_resp.keys == correct):
-                    NZ_word_resp.corr = 1
+                if (word_resp.keys == str(correct)) or (word_resp.keys == correct):
+                    word_resp.corr = 1
                 else:
-                    NZ_word_resp.corr = 0
+                    word_resp.corr = 0
                 # a response ends the routine
                 continueRoutine = False
-        # start/stop NZ
-        if NZ.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # start/stop wordlist
+        if wordlist.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            NZ.frameNStart = frameN  # exact frame index
-            NZ.tStart = t  # local t and not account for scr refresh
-            NZ.tStartRefresh = tThisFlipGlobal  # on global time
+            wordlist.frameNStart = frameN  # exact frame index
+            wordlist.tStart = t  # local t and not account for scr refresh
+            wordlist.tStartRefresh = tThisFlipGlobal  # on global time
             # add timestamp to datafile
-            thisExp.addData('NZ.started', tThisFlipGlobal)
-            NZ.play(when=win)  # sync with win flip
+            thisExp.addData('wordlist.started', tThisFlipGlobal)
+            wordlist.play(when=win)  # sync with win flip
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -417,7 +460,7 @@ for thisTrial in trials:
             routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in NZ_wordsComponents:
+        for thisComponent in wordsComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -426,29 +469,285 @@ for thisTrial in trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "NZ_words" ---
-    for thisComponent in NZ_wordsComponents:
+    # --- Ending Routine "words" ---
+    for thisComponent in wordsComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # check responses
-    if NZ_word_resp.keys in ['', [], None]:  # No response was made
-        NZ_word_resp.keys = None
+    if word_resp.keys in ['', [], None]:  # No response was made
+        word_resp.keys = None
         # was no response the correct answer?!
         if str(correct).lower() == 'none':
-           NZ_word_resp.corr = 1;  # correct non-response
+           word_resp.corr = 1;  # correct non-response
         else:
-           NZ_word_resp.corr = 0;  # failed to respond (incorrectly)
+           word_resp.corr = 0;  # failed to respond (incorrectly)
     # store data for trials (TrialHandler)
-    trials.addData('NZ_word_resp.keys',NZ_word_resp.keys)
-    trials.addData('NZ_word_resp.corr', NZ_word_resp.corr)
-    if NZ_word_resp.keys != None:  # we had a response
-        trials.addData('NZ_word_resp.rt', NZ_word_resp.rt)
-    NZ.stop()  # ensure sound has stopped at end of routine
-    # the Routine "NZ_words" was not non-slip safe, so reset the non-slip timer
+    trials.addData('word_resp.keys',word_resp.keys)
+    trials.addData('word_resp.corr', word_resp.corr)
+    if word_resp.keys != None:  # we had a response
+        trials.addData('word_resp.rt', word_resp.rt)
+    wordlist.stop()  # ensure sound has stopped at end of routine
+    # the Routine "words" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1.0 repeats of 'trials'
+
+
+# --- Prepare to start Routine "Part2" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_3.keys = []
+key_resp_3.rt = []
+_key_resp_3_allKeys = []
+# keep track of which components have finished
+Part2Components = [text_2, key_resp_3]
+for thisComponent in Part2Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "Part2" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_2* updates
+    if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.tStart = t  # local t and not account for scr refresh
+        text_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'text_2.started')
+        text_2.setAutoDraw(True)
+    
+    # *key_resp_3* updates
+    waitOnFlip = False
+    if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_3.frameNStart = frameN  # exact frame index
+        key_resp_3.tStart = t  # local t and not account for scr refresh
+        key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_3.started')
+        key_resp_3.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_3.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_3.getKeys(keyList=['y','n','left','right','space'], waitRelease=False)
+        _key_resp_3_allKeys.extend(theseKeys)
+        if len(_key_resp_3_allKeys):
+            key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+            key_resp_3.rt = _key_resp_3_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in Part2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "Part2" ---
+for thisComponent in Part2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_3.keys in ['', [], None]:  # No response was made
+    key_resp_3.keys = None
+thisExp.addData('key_resp_3.keys',key_resp_3.keys)
+if key_resp_3.keys != None:  # we had a response
+    thisExp.addData('key_resp_3.rt', key_resp_3.rt)
+thisExp.nextEntry()
+# the Routine "Part2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# set up handler to look after randomisation of conditions etc
+trials_2 = data.TrialHandler(nReps=1.0, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=data.importConditions('passages.xlsx'),
+    seed=None, name='trials_2')
+thisExp.addLoop(trials_2)  # add the loop to the experiment
+thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+if thisTrial_2 != None:
+    for paramName in thisTrial_2:
+        exec('{} = thisTrial_2[paramName]'.format(paramName))
+
+for thisTrial_2 in trials_2:
+    currentLoop = trials_2
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+    if thisTrial_2 != None:
+        for paramName in thisTrial_2:
+            exec('{} = thisTrial_2[paramName]'.format(paramName))
+    
+    # --- Prepare to start Routine "passages" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    passagelist.setSound('passages.xlsx', hamming=True)
+    passagelist.setVolume(1.0, log=False)
+    belive.reset()
+    nice.reset()
+    smart.reset()
+    trustworthy.reset()
+    # keep track of which components have finished
+    passagesComponents = [passagelist, belive, nice, smart, trustworthy]
+    for thisComponent in passagesComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "passages" ---
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        # start/stop passagelist
+        if passagelist.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            passagelist.frameNStart = frameN  # exact frame index
+            passagelist.tStart = t  # local t and not account for scr refresh
+            passagelist.tStartRefresh = tThisFlipGlobal  # on global time
+            # add timestamp to datafile
+            thisExp.addData('passagelist.started', tThisFlipGlobal)
+            passagelist.play(when=win)  # sync with win flip
+        
+        # *belive* updates
+        if belive.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            belive.frameNStart = frameN  # exact frame index
+            belive.tStart = t  # local t and not account for scr refresh
+            belive.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(belive, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'belive.started')
+            belive.setAutoDraw(True)
+        
+        # Check belive for response to end routine
+        if belive.getRating() is not None and belive.status == STARTED:
+            continueRoutine = False
+        
+        # *nice* updates
+        if nice.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            nice.frameNStart = frameN  # exact frame index
+            nice.tStart = t  # local t and not account for scr refresh
+            nice.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nice, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nice.started')
+            nice.setAutoDraw(True)
+        
+        # Check nice for response to end routine
+        if nice.getRating() is not None and nice.status == STARTED:
+            continueRoutine = False
+        
+        # *smart* updates
+        if smart.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            smart.frameNStart = frameN  # exact frame index
+            smart.tStart = t  # local t and not account for scr refresh
+            smart.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(smart, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'smart.started')
+            smart.setAutoDraw(True)
+        
+        # Check smart for response to end routine
+        if smart.getRating() is not None and smart.status == STARTED:
+            continueRoutine = False
+        
+        # *trustworthy* updates
+        if trustworthy.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            trustworthy.frameNStart = frameN  # exact frame index
+            trustworthy.tStart = t  # local t and not account for scr refresh
+            trustworthy.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trustworthy, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'trustworthy.started')
+            trustworthy.setAutoDraw(True)
+        
+        # Check trustworthy for response to end routine
+        if trustworthy.getRating() is not None and trustworthy.status == STARTED:
+            continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in passagesComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "passages" ---
+    for thisComponent in passagesComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    passagelist.stop()  # ensure sound has stopped at end of routine
+    trials_2.addData('belive.response', belive.getRating())
+    trials_2.addData('belive.rt', belive.getRT())
+    trials_2.addData('nice.response', nice.getRating())
+    trials_2.addData('nice.rt', nice.getRT())
+    trials_2.addData('smart.response', smart.getRating())
+    trials_2.addData('smart.rt', smart.getRT())
+    trials_2.addData('trustworthy.response', trustworthy.getRating())
+    trials_2.addData('trustworthy.rt', trustworthy.getRT())
+    # the Routine "passages" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    thisExp.nextEntry()
+    
+# completed 1.0 repeats of 'trials_2'
 
 
 # --- End experiment ---
