@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.4">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant':'f&quot;{randint(0, 999999):06.0f}&quot;', 'session':'001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="(1024, 768)" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="accent2" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="MIDDLE_BUTTON" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="Welcome">
+      <TextComponent name="Welcome_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Welcome_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0." valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome to the study!&amp;#10;&amp;#10;This study has two parts. In the first part you will have to categorize words upon hearing them, while in the second part you will listen and make judgments about short passages.  &amp;#10;&amp;#10;&amp;#10;Press SPACE to begin." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Part1">
+      <TextComponent name="text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Part 1&amp;#10;&amp;#10;In this first part of the study you will hear words that are either living or non-living things. For living things press &quot;A&quot; and for non-living things press &quot;L&quot;. This is a study measuring response time, so try to be as fast as possible. If you make an error you can correct yourself and the button you pressed last will be recorded." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="words">
+      <KeyboardComponent name="word_resp">
+        <Param val="'a', 'l'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correct" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="word_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="wordlist">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="wordlist" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="words.xlsx" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="passages">
+      <SoundComponent name="passagelist">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="passagelist" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="passages.xlsx" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
+      <SliderComponent name="belive">
+        <Param val="White" valType="color" updates="constant" name="borderColor"/>
+        <Param val="LightGray" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="0" valType="num" updates="constant" name="granularity"/>
+        <Param val="" valType="code" updates="None" name="initVal"/>
+        <Param val="" valType="list" updates="constant" name="labels"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="belive" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.0, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
+        <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
+        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(1, 2, 3, 4, 5)" valType="list" updates="constant" name="ticks"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </SliderComponent>
+      <SliderComponent name="nice">
+        <Param val="White" valType="color" updates="constant" name="borderColor"/>
+        <Param val="LightGray" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="0" valType="num" updates="constant" name="granularity"/>
+        <Param val="" valType="code" updates="None" name="initVal"/>
+        <Param val="" valType="list" updates="constant" name="labels"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="nice" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.0, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
+        <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
+        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(1, 2, 3, 4, 5)" valType="list" updates="constant" name="ticks"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </SliderComponent>
+      <SliderComponent name="smart">
+        <Param val="White" valType="color" updates="constant" name="borderColor"/>
+        <Param val="LightGray" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="0" valType="num" updates="constant" name="granularity"/>
+        <Param val="" valType="code" updates="None" name="initVal"/>
+        <Param val="" valType="list" updates="constant" name="labels"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="smart" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.0, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
+        <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
+        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(1, 2, 3, 4, 5)" valType="list" updates="constant" name="ticks"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </SliderComponent>
+      <SliderComponent name="trustworthy">
+        <Param val="White" valType="color" updates="constant" name="borderColor"/>
+        <Param val="LightGray" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="0" valType="num" updates="constant" name="granularity"/>
+        <Param val="" valType="code" updates="None" name="initVal"/>
+        <Param val="" valType="list" updates="constant" name="labels"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="trustworthy" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.0, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
+        <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
+        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(1, 2, 3, 4, 5)" valType="list" updates="constant" name="ticks"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </SliderComponent>
+    </Routine>
+    <Routine name="Part2">
+      <TextComponent name="text_2">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Part 2&amp;#10;&amp;#10;In this part of the study you will hear three brief passages. After listening to each passage you will be asked several questions about the content and your impressions of it." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param val="'y','n','left','right','space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_3" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Welcome"/>
+    <Routine name="Part1"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'target': 'shellfish', 'condition': 'living', 'correct': 'a', 'words': 'words/shellfish_NZ.wav'}, {'target': 'bloodhound', 'condition': 'living', 'correct': 'a', 'words': 'words/bloodhound_NZ.wav'}, {'target': 'antelope', 'condition': 'living', 'correct': 'a', 'words': 'words/antelope_NZ.wav'}, {'target': 'woodpecker', 'condition': 'living', 'correct': 'a', 'words': 'words/woodpecker_NZ.wav'}, {'target': 'swordfish', 'condition': 'living', 'correct': 'a', 'words': 'words/swordfish_NZ.wav'}, {'target': 'parakeet', 'condition': 'living', 'correct': 'a', 'words': 'words/parakeet_NZ.wav'}, {'target': 'walrus', 'condition': 'living', 'correct': 'a', 'words': 'words/walrus_NZ.wav'}, {'target': 'tortoise', 'condition': 'living', 'correct': 'a', 'words': 'words/tortoise_NZ.wav'}, {'target': 'caterpillar', 'condition': 'living', 'correct': 'a', 'words': 'words/caterpillar_NZ.wav'}, {'target': 'piranha', 'condition': 'living', 'correct': 'a', 'words': 'words/piranha_NZ.wav'}, {'target': 'chimpanzee', 'condition': 'living', 'correct': 'a', 'words': 'words/chimpanzee_NZ.wav'}, {'target': 'gazelle', 'condition': 'living', 'correct': 'a', 'words': 'words/gazelle_NZ.wav'}, {'target': 'seagull', 'condition': 'living', 'correct': 'a', 'words': 'words/seagull_NZ.wav'}, {'target': 'catfish', 'condition': 'living', 'correct': 'a', 'words': 'words/catfish_NZ.wav'}, {'target': 'critter', 'condition': 'living', 'correct': 'a', 'words': 'words/critter_NZ.wav'}, {'target': 'giraffe', 'condition': 'living', 'correct': 'a', 'words': 'words/giraffe_NZ.wav'}, {'target': 'python', 'condition': 'living', 'correct': 'a', 'words': 'words/python_NZ.wav'}, {'target': 'ferret', 'condition': 'living', 'correct': 'a', 'words': 'words/ferret_NZ.wav'}, {'target': 'rattlesnake', 'condition': 'living', 'correct': 'a', 'words': 'words/rattlesnake_NZ.wav'}, {'target': 'octopus', 'condition': 'living', 'correct': 'a', 'words': 'words/octopus_NZ.wav'}, {'target': 'livestock', 'condition': 'living', 'correct': 'a', 'words': 'words/livestock_NZ.wav'}, {'target': 'beetle', 'condition': 'living', 'correct': 'a', 'words': 'words/beetle_NZ.wav'}, {'target': 'possum', 'condition': 'living', 'correct': 'a', 'words': 'words/possum_NZ.wav'}, {'target': 'rhino', 'condition': 'living', 'correct': 'a', 'words': 'words/rhino_NZ.wav'}, {'target': 'panda', 'condition': 'living', 'correct': 'a', 'words': 'words/panda_NZ.wav'}, {'target': 'hamster', 'condition': 'living', 'correct': 'a', 'words': 'words/hamster_NZ.wav'}, {'target': 'crocodile', 'condition': 'living', 'correct': 'a', 'words': 'words/crocodile_NZ.wav'}, {'target': 'kangaroo', 'condition': 'living', 'correct': 'a', 'words': 'words/kangaroo_NZ.wav'}, {'target': 'corral', 'condition': 'living', 'correct': 'a', 'words': 'words/corral_NZ.wav'}, {'target': 'parasite', 'condition': 'living', 'correct': 'a', 'words': 'words/parasite_NZ.wav'}, {'target': 'newborn', 'condition': 'living', 'correct': 'a', 'words': 'words/newborn_NZ.wav'}, {'target': 'zebra', 'condition': 'living', 'correct': 'a', 'words': 'words/zebra_NZ.wav'}, {'target': 'predator', 'condition': 'living', 'correct': 'a', 'words': 'words/predator_NZ.wav'}, {'target': 'scorpion', 'condition': 'living', 'correct': 'a', 'words': 'words/scorpion_NZ.wav'}, {'target': 'dolphin', 'condition': 'living', 'correct': 'a', 'words': 'words/dolphin_NZ.wav'}, {'target': 'cricket', 'condition': 'living', 'correct': 'a', 'words': 'words/cricket_NZ.wav'}, {'target': 'penguin', 'condition': 'living', 'correct': 'a', 'words': 'words/penguin_NZ.wav'}, {'target': 'cuckoo', 'condition': 'living', 'correct': 'a', 'words': 'words/cuckoo_NZ.wav'}, {'target': 'fiancee', 'condition': 'living', 'correct': 'a', 'words': 'words/fiancee_NZ.wav'}, {'target': 'bacteria', 'condition': 'living', 'correct': 'a', 'words': 'words/bacteria_NZ.wav'}, {'target': 'goldfish', 'condition': 'living', 'correct': 'a', 'words': 'words/goldfish_NZ.wav'}, {'target': 'oyster', 'condition': 'living', 'correct': 'a', 'words': 'words/oyster_NZ.wav'}, {'target': 'insect', 'condition': 'living', 'correct': 'a', 'words': 'words/insect_NZ.wav'}, {'target': 'parrot', 'condition': 'living', 'correct': 'a', 'words': 'words/parrot_NZ.wav'}, {'target': 'reindeer', 'condition': 'living', 'correct': 'a', 'words': 'words/reindeer_NZ.wav'}, {'target': 'kitten', 'condition': 'living', 'correct': 'a', 'words': 'words/kitten_NZ.wav'}, {'target': 'camel', 'condition': 'living', 'correct': 'a', 'words': 'words/camel_NZ.wav'}, {'target': 'donkey', 'condition': 'living', 'correct': 'a', 'words': 'words/donkey_NZ.wav'}, {'target': 'leopard', 'condition': 'living', 'correct': 'a', 'words': 'words/leopard_NZ.wav'}, {'target': 'squirrel', 'condition': 'living', 'correct': 'a', 'words': 'words/squirrel_NZ.wav'}, {'target': 'butterfly', 'condition': 'living', 'correct': 'a', 'words': 'words/butterfly_NZ.wav'}, {'target': 'lion', 'condition': 'living', 'correct': 'a', 'words': 'words/lion_NZ.wav'}, {'target': 'salmon', 'condition': 'living', 'correct': 'a', 'words': 'words/salmon_NZ.wav'}, {'target': 'tuna', 'condition': 'living', 'correct': 'a', 'words': 'words/tuna_NZ.wav'}, {'target': 'spider', 'condition': 'living', 'correct': 'a', 'words': 'words/spider_NZ.wav'}, {'target': 'elephant', 'condition': 'living', 'correct': 'a', 'words': 'words/elephant_NZ.wav'}, {'target': 'goose', 'condition': 'living', 'correct': 'a', 'words': 'words/goose_NZ.wav'}, {'target': 'cattle', 'condition': 'living', 'correct': 'a', 'words': 'words/cattle_NZ.wav'}, {'target': 'tiger', 'condition': 'living', 'correct': 'a', 'words': 'words/tiger_NZ.wav'}, {'target': 'mouse', 'condition': 'living', 'correct': 'a', 'words': 'words/mouse_NZ.wav'}, {'target': 'rabbit', 'condition': 'living', 'correct': 'a', 'words': 'words/rabbit_NZ.wav'}, {'target': 'snake', 'condition': 'living', 'correct': 'a', 'words': 'words/snake_NZ.wav'}, {'target': 'turkey', 'condition': 'living', 'correct': 'a', 'words': 'words/turkey_NZ.wav'}, {'target': 'flower', 'condition': 'living', 'correct': 'a', 'words': 'words/flower_NZ.wav'}, {'target': 'grandmother', 'condition': 'living', 'correct': 'a', 'words': 'words/grandmother_NZ.wav'}, {'target': 'monkey', 'condition': 'living', 'correct': 'a', 'words': 'words/monkey_NZ.wav'}, {'target': 'musket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/musket_NZ.wav'}, {'target': 'sunscreen', 'condition': 'non-living', 'correct': 'l', 'words': 'words/sunscreen_NZ.wav'}, {'target': 'sauerkraut', 'condition': 'non-living', 'correct': 'l', 'words': 'words/sauerkraut_NZ.wav'}, {'target': 'matchbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/matchbook_NZ.wav'}, {'target': 'eyeliner', 'condition': 'non-living', 'correct': 'l', 'words': 'words/eyeliner_NZ.wav'}, {'target': 'aftershave', 'condition': 'non-living', 'correct': 'l', 'words': 'words/aftershave_NZ.wav'}, {'target': 'corkscrew', 'condition': 'non-living', 'correct': 'l', 'words': 'words/corkscrew_NZ.wav'}, {'target': 'thermos', 'condition': 'non-living', 'correct': 'l', 'words': 'words/thermos_NZ.wav'}, {'target': 'airstrip', 'condition': 'non-living', 'correct': 'l', 'words': 'words/airstrip_NZ.wav'}, {'target': 'fragrance', 'condition': 'non-living', 'correct': 'l', 'words': 'words/fragrance_NZ.wav'}, {'target': 'scrapbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/scrapbook_NZ.wav'}, {'target': 'buttermilk', 'condition': 'non-living', 'correct': 'l', 'words': 'words/buttermilk_NZ.wav'}, {'target': 'racquetball', 'condition': 'non-living', 'correct': 'l', 'words': 'words/racquetball_NZ.wav'}, {'target': 'skillet', 'condition': 'non-living', 'correct': 'l', 'words': 'words/skillet_NZ.wav'}, {'target': 'podium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/podium_NZ.wav'}, {'target': 'duffel', 'condition': 'non-living', 'correct': 'l', 'words': 'words/duffel_NZ.wav'}, {'target': 'eggnog', 'condition': 'non-living', 'correct': 'l', 'words': 'words/eggnog_NZ.wav'}, {'target': 'folder', 'condition': 'non-living', 'correct': 'l', 'words': 'words/folder_NZ.wav'}, {'target': 'armour', 'condition': 'non-living', 'correct': 'l', 'words': 'words/armour_NZ.wav'}, {'target': 'syringe', 'condition': 'non-living', 'correct': 'l', 'words': 'words/syringe_NZ.wav'}, {'target': 'manicure', 'condition': 'non-living', 'correct': 'l', 'words': 'words/manicure_NZ.wav'}, {'target': 'washer', 'condition': 'non-living', 'correct': 'l', 'words': 'words/washer_NZ.wav'}, {'target': 'espresso', 'condition': 'non-living', 'correct': 'l', 'words': 'words/espresso_NZ.wav'}, {'target': 'email', 'condition': 'non-living', 'correct': 'l', 'words': 'words/email_NZ.wav'}, {'target': 'barbershop', 'condition': 'non-living', 'correct': 'l', 'words': 'words/barbershop_NZ.wav'}, {'target': 'uranium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/uranium_NZ.wav'}, {'target': 'softball', 'condition': 'non-living', 'correct': 'l', 'words': 'words/softball_NZ.wav'}, {'target': 'bleach', 'condition': 'non-living', 'correct': 'l', 'words': 'words/bleach_NZ.wav'}, {'target': 'vocabulary', 'condition': 'non-living', 'correct': 'l', 'words': 'words/vocabulary_NZ.wav'}, {'target': 'gadget', 'condition': 'non-living', 'correct': 'l', 'words': 'words/gadget_NZ.wav'}, {'target': 'grapefruit', 'condition': 'non-living', 'correct': 'l', 'words': 'words/grapefruit_NZ.wav'}, {'target': 'cupboard', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cupboard_NZ.wav'}, {'target': 'plaster', 'condition': 'non-living', 'correct': 'l', 'words': 'words/plaster_NZ.wav'}, {'target': 'hydrogen', 'condition': 'non-living', 'correct': 'l', 'words': 'words/hydrogen_NZ.wav'}, {'target': 'aquarium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/aquarium_NZ.wav'}, {'target': 'boiler', 'condition': 'non-living', 'correct': 'l', 'words': 'words/boiler_NZ.wav'}, {'target': 'pager', 'condition': 'non-living', 'correct': 'l', 'words': 'words/pager_NZ.wav'}, {'target': 'jewellery', 'condition': 'non-living', 'correct': 'l', 'words': 'words/jewellery_NZ.wav'}, {'target': 'mainland', 'condition': 'non-living', 'correct': 'l', 'words': 'words/mainland_NZ.wav'}, {'target': 'cinnamon', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cinnamon_NZ.wav'}, {'target': 'fiber', 'condition': 'non-living', 'correct': 'l', 'words': 'words/fiber_NZ.wav'}, {'target': 'bagel', 'condition': 'non-living', 'correct': 'l', 'words': 'words/bagel_NZ.wav'}, {'target': 'casket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/casket_NZ.wav'}, {'target': 'telegraph', 'condition': 'non-living', 'correct': 'l', 'words': 'words/telegraph_NZ.wav'}, {'target': 'laptop', 'condition': 'non-living', 'correct': 'l', 'words': 'words/laptop_NZ.wav'}, {'target': 'yearbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/yearbook_NZ.wav'}, {'target': 'toothbrush', 'condition': 'non-living', 'correct': 'l', 'words': 'words/toothbrush_NZ.wav'}, {'target': 'cocoa', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cocoa_NZ.wav'}, {'target': 'playground', 'condition': 'non-living', 'correct': 'l', 'words': 'words/playground_NZ.wav'}, {'target': 'freezer', 'condition': 'non-living', 'correct': 'l', 'words': 'words/freezer_NZ.wav'}, {'target': 'freeway', 'condition': 'non-living', 'correct': 'l', 'words': 'words/freeway_NZ.wav'}, {'target': 'makeup', 'condition': 'non-living', 'correct': 'l', 'words': 'words/makeup_NZ.wav'}, {'target': 'poster', 'condition': 'non-living', 'correct': 'l', 'words': 'words/poster_NZ.wav'}, {'target': 'arrow', 'condition': 'non-living', 'correct': 'l', 'words': 'words/arrow_NZ.wav'}, {'target': 'dynamite', 'condition': 'non-living', 'correct': 'l', 'words': 'words/dynamite_NZ.wav'}, {'target': 'photograph', 'condition': 'non-living', 'correct': 'l', 'words': 'words/photograph_NZ.wav'}, {'target': 'missile', 'condition': 'non-living', 'correct': 'l', 'words': 'words/missile_NZ.wav'}, {'target': 'basket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/basket_NZ.wav'}, {'target': 'museum', 'condition': 'non-living', 'correct': 'l', 'words': 'words/museum_NZ.wav'}, {'target': 'palace', 'condition': 'non-living', 'correct': 'l', 'words': 'words/palace_NZ.wav'}, {'target': 'diamond', 'condition': 'non-living', 'correct': 'l', 'words': 'words/diamond_NZ.wav'}, {'target': 'butter', 'condition': 'non-living', 'correct': 'l', 'words': 'words/butter_NZ.wav'}, {'target': 'vehicle', 'condition': 'non-living', 'correct': 'l', 'words': 'words/vehicle_NZ.wav'}, {'target': 'wallet', 'condition': 'non-living', 'correct': 'l', 'words': 'words/wallet_NZ.wav'}, {'target': 'garage', 'condition': 'non-living', 'correct': 'l', 'words': 'words/garage_NZ.wav'}, {'target': 'pizza', 'condition': 'non-living', 'correct': 'l', 'words': 'words/pizza_NZ.wav'}, {'target': 'shellfish', 'condition': 'living', 'correct': 'a', 'words': 'words/shellfish_US.wav'}, {'target': 'bloodhound', 'condition': 'living', 'correct': 'a', 'words': 'words/bloodhound_US.wav'}, {'target': 'antelope', 'condition': 'living', 'correct': 'a', 'words': 'words/antelope_US.wav'}, {'target': 'woodpecker', 'condition': 'living', 'correct': 'a', 'words': 'words/woodpecker_US.wav'}, {'target': 'swordfish', 'condition': 'living', 'correct': 'a', 'words': 'words/swordfish_US.wav'}, {'target': 'parakeet', 'condition': 'living', 'correct': 'a', 'words': 'words/parakeet_US.wav'}, {'target': 'walrus', 'condition': 'living', 'correct': 'a', 'words': 'words/walrus_US.wav'}, {'target': 'tortoise', 'condition': 'living', 'correct': 'a', 'words': 'words/tortoise_US.wav'}, {'target': 'caterpillar', 'condition': 'living', 'correct': 'a', 'words': 'words/caterpillar_US.wav'}, {'target': 'piranha', 'condition': 'living', 'correct': 'a', 'words': 'words/piranha_US.wav'}, {'target': 'chimpanzee', 'condition': 'living', 'correct': 'a', 'words': 'words/chimpanzee_US.wav'}, {'target': 'gazelle', 'condition': 'living', 'correct': 'a', 'words': 'words/gazelle_US.wav'}, {'target': 'seagull', 'condition': 'living', 'correct': 'a', 'words': 'words/seagull_US.wav'}, {'target': 'catfish', 'condition': 'living', 'correct': 'a', 'words': 'words/catfish_US.wav'}, {'target': 'critter', 'condition': 'living', 'correct': 'a', 'words': 'words/critter_US.wav'}, {'target': 'giraffe', 'condition': 'living', 'correct': 'a', 'words': 'words/giraffe_US.wav'}, {'target': 'python', 'condition': 'living', 'correct': 'a', 'words': 'words/python_US.wav'}, {'target': 'ferret', 'condition': 'living', 'correct': 'a', 'words': 'words/ferret_US.wav'}, {'target': 'rattlesnake', 'condition': 'living', 'correct': 'a', 'words': 'words/rattlesnake_US.wav'}, {'target': 'octopus', 'condition': 'living', 'correct': 'a', 'words': 'words/octopus_US.wav'}, {'target': 'livestock', 'condition': 'living', 'correct': 'a', 'words': 'words/livestock_US.wav'}, {'target': 'beetle', 'condition': 'living', 'correct': 'a', 'words': 'words/beetle_US.wav'}, {'target': 'possum', 'condition': 'living', 'correct': 'a', 'words': 'words/possum_US.wav'}, {'target': 'rhino', 'condition': 'living', 'correct': 'a', 'words': 'words/rhino_US.wav'}, {'target': 'panda', 'condition': 'living', 'correct': 'a', 'words': 'words/panda_US.wav'}, {'target': 'hamster', 'condition': 'living', 'correct': 'a', 'words': 'words/hamster_US.wav'}, {'target': 'crocodile', 'condition': 'living', 'correct': 'a', 'words': 'words/crocodile_US.wav'}, {'target': 'kangaroo', 'condition': 'living', 'correct': 'a', 'words': 'words/kangaroo_US.wav'}, {'target': 'corral', 'condition': 'living', 'correct': 'a', 'words': 'words/corral_US.wav'}, {'target': 'parasite', 'condition': 'living', 'correct': 'a', 'words': 'words/parasite_US.wav'}, {'target': 'newborn', 'condition': 'living', 'correct': 'a', 'words': 'words/newborn_US.wav'}, {'target': 'zebra', 'condition': 'living', 'correct': 'a', 'words': 'words/zebra_US.wav'}, {'target': 'predator', 'condition': 'living', 'correct': 'a', 'words': 'words/predator_US.wav'}, {'target': 'scorpion', 'condition': 'living', 'correct': 'a', 'words': 'words/scorpion_US.wav'}, {'target': 'dolphin', 'condition': 'living', 'correct': 'a', 'words': 'words/dolphin_US.wav'}, {'target': 'cricket', 'condition': 'living', 'correct': 'a', 'words': 'words/cricket_US.wav'}, {'target': 'penguin', 'condition': 'living', 'correct': 'a', 'words': 'words/penguin_US.wav'}, {'target': 'cuckoo', 'condition': 'living', 'correct': 'a', 'words': 'words/cuckoo_US.wav'}, {'target': 'fiancee', 'condition': 'living', 'correct': 'a', 'words': 'words/fiancee_US.wav'}, {'target': 'bacteria', 'condition': 'living', 'correct': 'a', 'words': 'words/bacteria_US.wav'}, {'target': 'goldfish', 'condition': 'living', 'correct': 'a', 'words': 'words/goldfish_US.wav'}, {'target': 'oyster', 'condition': 'living', 'correct': 'a', 'words': 'words/oyster_US.wav'}, {'target': 'insect', 'condition': 'living', 'correct': 'a', 'words': 'words/insect_US.wav'}, {'target': 'parrot', 'condition': 'living', 'correct': 'a', 'words': 'words/parrot_US.wav'}, {'target': 'reindeer', 'condition': 'living', 'correct': 'a', 'words': 'words/reindeer_US.wav'}, {'target': 'kitten', 'condition': 'living', 'correct': 'a', 'words': 'words/kitten_US.wav'}, {'target': 'camel', 'condition': 'living', 'correct': 'a', 'words': 'words/camel_US.wav'}, {'target': 'donkey', 'condition': 'living', 'correct': 'a', 'words': 'words/donkey_US.wav'}, {'target': 'leopard', 'condition': 'living', 'correct': 'a', 'words': 'words/leopard_US.wav'}, {'target': 'squirrel', 'condition': 'living', 'correct': 'a', 'words': 'words/squirrel_US.wav'}, {'target': 'butterfly', 'condition': 'living', 'correct': 'a', 'words': 'words/butterfly_US.wav'}, {'target': 'lion', 'condition': 'living', 'correct': 'a', 'words': 'words/lion_US.wav'}, {'target': 'salmon', 'condition': 'living', 'correct': 'a', 'words': 'words/salmon_US.wav'}, {'target': 'tuna', 'condition': 'living', 'correct': 'a', 'words': 'words/tuna_US.wav'}, {'target': 'spider', 'condition': 'living', 'correct': 'a', 'words': 'words/spider_US.wav'}, {'target': 'elephant', 'condition': 'living', 'correct': 'a', 'words': 'words/elephant_US.wav'}, {'target': 'goose', 'condition': 'living', 'correct': 'a', 'words': 'words/goose_US.wav'}, {'target': 'cattle', 'condition': 'living', 'correct': 'a', 'words': 'words/cattle_US.wav'}, {'target': 'tiger', 'condition': 'living', 'correct': 'a', 'words': 'words/tiger_US.wav'}, {'target': 'mouse', 'condition': 'living', 'correct': 'a', 'words': 'words/mouse_US.wav'}, {'target': 'rabbit', 'condition': 'living', 'correct': 'a', 'words': 'words/rabbit_US.wav'}, {'target': 'snake', 'condition': 'living', 'correct': 'a', 'words': 'words/snake_US.wav'}, {'target': 'turkey', 'condition': 'living', 'correct': 'a', 'words': 'words/turkey_US.wav'}, {'target': 'flower', 'condition': 'living', 'correct': 'a', 'words': 'words/flower_US.wav'}, {'target': 'grandmother', 'condition': 'living', 'correct': 'a', 'words': 'words/grandmother_US.wav'}, {'target': 'monkey', 'condition': 'living', 'correct': 'a', 'words': 'words/monkey_US.wav'}, {'target': 'musket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/musket_US.wav'}, {'target': 'sunscreen', 'condition': 'non-living', 'correct': 'l', 'words': 'words/sunscreen_US.wav'}, {'target': 'sauerkraut', 'condition': 'non-living', 'correct': 'l', 'words': 'words/sauerkraut_US.wav'}, {'target': 'matchbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/matchbook_US.wav'}, {'target': 'eyeliner', 'condition': 'non-living', 'correct': 'l', 'words': 'words/eyeliner_US.wav'}, {'target': 'aftershave', 'condition': 'non-living', 'correct': 'l', 'words': 'words/aftershave_US.wav'}, {'target': 'corkscrew', 'condition': 'non-living', 'correct': 'l', 'words': 'words/corkscrew_US.wav'}, {'target': 'thermos', 'condition': 'non-living', 'correct': 'l', 'words': 'words/thermos_US.wav'}, {'target': 'airstrip', 'condition': 'non-living', 'correct': 'l', 'words': 'words/airstrip_US.wav'}, {'target': 'fragrance', 'condition': 'non-living', 'correct': 'l', 'words': 'words/fragrance_US.wav'}, {'target': 'scrapbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/scrapbook_US.wav'}, {'target': 'buttermilk', 'condition': 'non-living', 'correct': 'l', 'words': 'words/buttermilk_US.wav'}, {'target': 'racquetball', 'condition': 'non-living', 'correct': 'l', 'words': 'words/racquetball_US.wav'}, {'target': 'skillet', 'condition': 'non-living', 'correct': 'l', 'words': 'words/skillet_US.wav'}, {'target': 'podium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/podium_US.wav'}, {'target': 'duffel', 'condition': 'non-living', 'correct': 'l', 'words': 'words/duffel_US.wav'}, {'target': 'eggnog', 'condition': 'non-living', 'correct': 'l', 'words': 'words/eggnog_US.wav'}, {'target': 'folder', 'condition': 'non-living', 'correct': 'l', 'words': 'words/folder_US.wav'}, {'target': 'armour', 'condition': 'non-living', 'correct': 'l', 'words': 'words/armour_US.wav'}, {'target': 'syringe', 'condition': 'non-living', 'correct': 'l', 'words': 'words/syringe_US.wav'}, {'target': 'manicure', 'condition': 'non-living', 'correct': 'l', 'words': 'words/manicure_US.wav'}, {'target': 'washer', 'condition': 'non-living', 'correct': 'l', 'words': 'words/washer_US.wav'}, {'target': 'espresso', 'condition': 'non-living', 'correct': 'l', 'words': 'words/espresso_US.wav'}, {'target': 'email', 'condition': 'non-living', 'correct': 'l', 'words': 'words/email_US.wav'}, {'target': 'barbershop', 'condition': 'non-living', 'correct': 'l', 'words': 'words/barbershop_US.wav'}, {'target': 'uranium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/uranium_US.wav'}, {'target': 'softball', 'condition': 'non-living', 'correct': 'l', 'words': 'words/softball_US.wav'}, {'target': 'bleach', 'condition': 'non-living', 'correct': 'l', 'words': 'words/bleach_US.wav'}, {'target': 'vocabulary', 'condition': 'non-living', 'correct': 'l', 'words': 'words/vocabulary_US.wav'}, {'target': 'gadget', 'condition': 'non-living', 'correct': 'l', 'words': 'words/gadget_US.wav'}, {'target': 'grapefruit', 'condition': 'non-living', 'correct': 'l', 'words': 'words/grapefruit_US.wav'}, {'target': 'cupboard', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cupboard_US.wav'}, {'target': 'plaster', 'condition': 'non-living', 'correct': 'l', 'words': 'words/plaster_US.wav'}, {'target': 'hydrogen', 'condition': 'non-living', 'correct': 'l', 'words': 'words/hydrogen_US.wav'}, {'target': 'aquarium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/aquarium_US.wav'}, {'target': 'boiler', 'condition': 'non-living', 'correct': 'l', 'words': 'words/boiler_US.wav'}, {'target': 'pager', 'condition': 'non-living', 'correct': 'l', 'words': 'words/pager_US.wav'}, {'target': 'jewellery', 'condition': 'non-living', 'correct': 'l', 'words': 'words/jewellery_US.wav'}, {'target': 'mainland', 'condition': 'non-living', 'correct': 'l', 'words': 'words/mainland_US.wav'}, {'target': 'cinnamon', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cinnamon_US.wav'}, {'target': 'fiber', 'condition': 'non-living', 'correct': 'l', 'words': 'words/fiber_US.wav'}, {'target': 'bagel', 'condition': 'non-living', 'correct': 'l', 'words': 'words/bagel_US.wav'}, {'target': 'casket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/casket_US.wav'}, {'target': 'telegraph', 'condition': 'non-living', 'correct': 'l', 'words': 'words/telegraph_US.wav'}, {'target': 'laptop', 'condition': 'non-living', 'correct': 'l', 'words': 'words/laptop_US.wav'}, {'target': 'yearbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/yearbook_US.wav'}, {'target': 'toothbrush', 'condition': 'non-living', 'correct': 'l', 'words': 'words/toothbrush_US.wav'}, {'target': 'cocoa', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cocoa_US.wav'}, {'target': 'playground', 'condition': 'non-living', 'correct': 'l', 'words': 'words/playground_US.wav'}, {'target': 'freezer', 'condition': 'non-living', 'correct': 'l', 'words': 'words/freezer_US.wav'}, {'target': 'freeway', 'condition': 'non-living', 'correct': 'l', 'words': 'words/freeway_US.wav'}, {'target': 'makeup', 'condition': 'non-living', 'correct': 'l', 'words': 'words/makeup_US.wav'}, {'target': 'poster', 'condition': 'non-living', 'correct': 'l', 'words': 'words/poster_US.wav'}, {'target': 'arrow', 'condition': 'non-living', 'correct': 'l', 'words': 'words/arrow_US.wav'}, {'target': 'dynamite', 'condition': 'non-living', 'correct': 'l', 'words': 'words/dynamite_US.wav'}, {'target': 'photograph', 'condition': 'non-living', 'correct': 'l', 'words': 'words/photograph_US.wav'}, {'target': 'missile', 'condition': 'non-living', 'correct': 'l', 'words': 'words/missile_US.wav'}, {'target': 'basket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/basket_US.wav'}, {'target': 'museum', 'condition': 'non-living', 'correct': 'l', 'words': 'words/museum_US.wav'}, {'target': 'palace', 'condition': 'non-living', 'correct': 'l', 'words': 'words/palace_US.wav'}, {'target': 'diamond', 'condition': 'non-living', 'correct': 'l', 'words': 'words/diamond_US.wav'}, {'target': 'butter', 'condition': 'non-living', 'correct': 'l', 'words': 'words/butter_US.wav'}, {'target': 'vehicle', 'condition': 'non-living', 'correct': 'l', 'words': 'words/vehicle_US.wav'}, {'target': 'wallet', 'condition': 'non-living', 'correct': 'l', 'words': 'words/wallet_US.wav'}, {'target': 'garage', 'condition': 'non-living', 'correct': 'l', 'words': 'words/garage_US.wav'}, {'target': 'pizza', 'condition': 'non-living', 'correct': 'l', 'words': 'words/pizza_US.wav'}, {'target': 'shellfish', 'condition': 'living', 'correct': 'a', 'words': 'words/shellfish_TR.wav'}, {'target': 'bloodhound', 'condition': 'living', 'correct': 'a', 'words': 'words/bloodhound_TR.wav'}, {'target': 'antelope', 'condition': 'living', 'correct': 'a', 'words': 'words/antelope_TR.wav'}, {'target': 'woodpecker', 'condition': 'living', 'correct': 'a', 'words': 'words/woodpecker_TR.wav'}, {'target': 'swordfish', 'condition': 'living', 'correct': 'a', 'words': 'words/swordfish_TR.wav'}, {'target': 'parakeet', 'condition': 'living', 'correct': 'a', 'words': 'words/parakeet_TR.wav'}, {'target': 'walrus', 'condition': 'living', 'correct': 'a', 'words': 'words/walrus_TR.wav'}, {'target': 'tortoise', 'condition': 'living', 'correct': 'a', 'words': 'words/tortoise_TR.wav'}, {'target': 'caterpillar', 'condition': 'living', 'correct': 'a', 'words': 'words/caterpillar_TR.wav'}, {'target': 'piranha', 'condition': 'living', 'correct': 'a', 'words': 'words/piranha_TR.wav'}, {'target': 'chimpanzee', 'condition': 'living', 'correct': 'a', 'words': 'words/chimpanzee_TR.wav'}, {'target': 'gazelle', 'condition': 'living', 'correct': 'a', 'words': 'words/gazelle_TR.wav'}, {'target': 'seagull', 'condition': 'living', 'correct': 'a', 'words': 'words/seagull_TR.wav'}, {'target': 'catfish', 'condition': 'living', 'correct': 'a', 'words': 'words/catfish_TR.wav'}, {'target': 'critter', 'condition': 'living', 'correct': 'a', 'words': 'words/critter_TR.wav'}, {'target': 'giraffe', 'condition': 'living', 'correct': 'a', 'words': 'words/giraffe_TR.wav'}, {'target': 'python', 'condition': 'living', 'correct': 'a', 'words': 'words/python_TR.wav'}, {'target': 'ferret', 'condition': 'living', 'correct': 'a', 'words': 'words/ferret_TR.wav'}, {'target': 'rattlesnake', 'condition': 'living', 'correct': 'a', 'words': 'words/rattlesnake_TR.wav'}, {'target': 'octopus', 'condition': 'living', 'correct': 'a', 'words': 'words/octopus_TR.wav'}, {'target': 'livestock', 'condition': 'living', 'correct': 'a', 'words': 'words/livestock_TR.wav'}, {'target': 'beetle', 'condition': 'living', 'correct': 'a', 'words': 'words/beetle_TR.wav'}, {'target': 'possum', 'condition': 'living', 'correct': 'a', 'words': 'words/possum_TR.wav'}, {'target': 'rhino', 'condition': 'living', 'correct': 'a', 'words': 'words/rhino_TR.wav'}, {'target': 'panda', 'condition': 'living', 'correct': 'a', 'words': 'words/panda_TR.wav'}, {'target': 'hamster', 'condition': 'living', 'correct': 'a', 'words': 'words/hamster_TR.wav'}, {'target': 'crocodile', 'condition': 'living', 'correct': 'a', 'words': 'words/crocodile_TR.wav'}, {'target': 'kangaroo', 'condition': 'living', 'correct': 'a', 'words': 'words/kangaroo_TR.wav'}, {'target': 'corral', 'condition': 'living', 'correct': 'a', 'words': 'words/corral_TR.wav'}, {'target': 'parasite', 'condition': 'living', 'correct': 'a', 'words': 'words/parasite_TR.wav'}, {'target': 'newborn', 'condition': 'living', 'correct': 'a', 'words': 'words/newborn_TR.wav'}, {'target': 'zebra', 'condition': 'living', 'correct': 'a', 'words': 'words/zebra_TR.wav'}, {'target': 'predator', 'condition': 'living', 'correct': 'a', 'words': 'words/predator_TR.wav'}, {'target': 'scorpion', 'condition': 'living', 'correct': 'a', 'words': 'words/scorpion_TR.wav'}, {'target': 'dolphin', 'condition': 'living', 'correct': 'a', 'words': 'words/dolphin_TR.wav'}, {'target': 'cricket', 'condition': 'living', 'correct': 'a', 'words': 'words/cricket_TR.wav'}, {'target': 'penguin', 'condition': 'living', 'correct': 'a', 'words': 'words/penguin_TR.wav'}, {'target': 'cuckoo', 'condition': 'living', 'correct': 'a', 'words': 'words/cuckoo_TR.wav'}, {'target': 'fiancee', 'condition': 'living', 'correct': 'a', 'words': 'words/fiancee_TR.wav'}, {'target': 'bacteria', 'condition': 'living', 'correct': 'a', 'words': 'words/bacteria_TR.wav'}, {'target': 'goldfish', 'condition': 'living', 'correct': 'a', 'words': 'words/goldfish_TR.wav'}, {'target': 'oyster', 'condition': 'living', 'correct': 'a', 'words': 'words/oyster_TR.wav'}, {'target': 'insect', 'condition': 'living', 'correct': 'a', 'words': 'words/insect_TR.wav'}, {'target': 'parrot', 'condition': 'living', 'correct': 'a', 'words': 'words/parrot_TR.wav'}, {'target': 'reindeer', 'condition': 'living', 'correct': 'a', 'words': 'words/reindeer_TR.wav'}, {'target': 'kitten', 'condition': 'living', 'correct': 'a', 'words': 'words/kitten_TR.wav'}, {'target': 'camel', 'condition': 'living', 'correct': 'a', 'words': 'words/camel_TR.wav'}, {'target': 'donkey', 'condition': 'living', 'correct': 'a', 'words': 'words/donkey_TR.wav'}, {'target': 'leopard', 'condition': 'living', 'correct': 'a', 'words': 'words/leopard_TR.wav'}, {'target': 'squirrel', 'condition': 'living', 'correct': 'a', 'words': 'words/squirrel_TR.wav'}, {'target': 'butterfly', 'condition': 'living', 'correct': 'a', 'words': 'words/butterfly_TR.wav'}, {'target': 'lion', 'condition': 'living', 'correct': 'a', 'words': 'words/lion_TR.wav'}, {'target': 'salmon', 'condition': 'living', 'correct': 'a', 'words': 'words/salmon_TR.wav'}, {'target': 'tuna', 'condition': 'living', 'correct': 'a', 'words': 'words/tuna_TR.wav'}, {'target': 'spider', 'condition': 'living', 'correct': 'a', 'words': 'words/spider_TR.wav'}, {'target': 'elephant', 'condition': 'living', 'correct': 'a', 'words': 'words/elephant_TR.wav'}, {'target': 'goose', 'condition': 'living', 'correct': 'a', 'words': 'words/goose_TR.wav'}, {'target': 'cattle', 'condition': 'living', 'correct': 'a', 'words': 'words/cattle_TR.wav'}, {'target': 'tiger', 'condition': 'living', 'correct': 'a', 'words': 'words/tiger_TR.wav'}, {'target': 'mouse', 'condition': 'living', 'correct': 'a', 'words': 'words/mouse_TR.wav'}, {'target': 'rabbit', 'condition': 'living', 'correct': 'a', 'words': 'words/rabbit_TR.wav'}, {'target': 'snake', 'condition': 'living', 'correct': 'a', 'words': 'words/snake_TR.wav'}, {'target': 'turkey', 'condition': 'living', 'correct': 'a', 'words': 'words/turkey_TR.wav'}, {'target': 'flower', 'condition': 'living', 'correct': 'a', 'words': 'words/flower_TR.wav'}, {'target': 'grandmother', 'condition': 'living', 'correct': 'a', 'words': 'words/grandmother_TR.wav'}, {'target': 'monkey', 'condition': 'living', 'correct': 'a', 'words': 'words/monkey_TR.wav'}, {'target': 'musket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/musket_TR.wav'}, {'target': 'sunscreen', 'condition': 'non-living', 'correct': 'l', 'words': 'words/sunscreen_TR.wav'}, {'target': 'sauerkraut', 'condition': 'non-living', 'correct': 'l', 'words': 'words/sauerkraut_TR.wav'}, {'target': 'matchbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/matchbook_TR.wav'}, {'target': 'eyeliner', 'condition': 'non-living', 'correct': 'l', 'words': 'words/eyeliner_TR.wav'}, {'target': 'aftershave', 'condition': 'non-living', 'correct': 'l', 'words': 'words/aftershave_TR.wav'}, {'target': 'corkscrew', 'condition': 'non-living', 'correct': 'l', 'words': 'words/corkscrew_TR.wav'}, {'target': 'thermos', 'condition': 'non-living', 'correct': 'l', 'words': 'words/thermos_TR.wav'}, {'target': 'airstrip', 'condition': 'non-living', 'correct': 'l', 'words': 'words/airstrip_TR.wav'}, {'target': 'fragrance', 'condition': 'non-living', 'correct': 'l', 'words': 'words/fragrance_TR.wav'}, {'target': 'scrapbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/scrapbook_TR.wav'}, {'target': 'buttermilk', 'condition': 'non-living', 'correct': 'l', 'words': 'words/buttermilk_TR.wav'}, {'target': 'racquetball', 'condition': 'non-living', 'correct': 'l', 'words': 'words/racquetball_TR.wav'}, {'target': 'skillet', 'condition': 'non-living', 'correct': 'l', 'words': 'words/skillet_TR.wav'}, {'target': 'podium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/podium_TR.wav'}, {'target': 'duffel', 'condition': 'non-living', 'correct': 'l', 'words': 'words/duffel_TR.wav'}, {'target': 'eggnog', 'condition': 'non-living', 'correct': 'l', 'words': 'words/eggnog_TR.wav'}, {'target': 'folder', 'condition': 'non-living', 'correct': 'l', 'words': 'words/folder_TR.wav'}, {'target': 'armour', 'condition': 'non-living', 'correct': 'l', 'words': 'words/armour_TR.wav'}, {'target': 'syringe', 'condition': 'non-living', 'correct': 'l', 'words': 'words/syringe_TR.wav'}, {'target': 'manicure', 'condition': 'non-living', 'correct': 'l', 'words': 'words/manicure_TR.wav'}, {'target': 'washer', 'condition': 'non-living', 'correct': 'l', 'words': 'words/washer_TR.wav'}, {'target': 'espresso', 'condition': 'non-living', 'correct': 'l', 'words': 'words/espresso_TR.wav'}, {'target': 'email', 'condition': 'non-living', 'correct': 'l', 'words': 'words/email_TR.wav'}, {'target': 'barbershop', 'condition': 'non-living', 'correct': 'l', 'words': 'words/barbershop_TR.wav'}, {'target': 'uranium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/uranium_TR.wav'}, {'target': 'softball', 'condition': 'non-living', 'correct': 'l', 'words': 'words/softball_TR.wav'}, {'target': 'bleach', 'condition': 'non-living', 'correct': 'l', 'words': 'words/bleach_TR.wav'}, {'target': 'vocabulary', 'condition': 'non-living', 'correct': 'l', 'words': 'words/vocabulary_TR.wav'}, {'target': 'gadget', 'condition': 'non-living', 'correct': 'l', 'words': 'words/gadget_TR.wav'}, {'target': 'grapefruit', 'condition': 'non-living', 'correct': 'l', 'words': 'words/grapefruit_TR.wav'}, {'target': 'cupboard', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cupboard_TR.wav'}, {'target': 'plaster', 'condition': 'non-living', 'correct': 'l', 'words': 'words/plaster_TR.wav'}, {'target': 'hydrogen', 'condition': 'non-living', 'correct': 'l', 'words': 'words/hydrogen_TR.wav'}, {'target': 'aquarium', 'condition': 'non-living', 'correct': 'l', 'words': 'words/aquarium_TR.wav'}, {'target': 'boiler', 'condition': 'non-living', 'correct': 'l', 'words': 'words/boiler_TR.wav'}, {'target': 'pager', 'condition': 'non-living', 'correct': 'l', 'words': 'words/pager_TR.wav'}, {'target': 'jewellery', 'condition': 'non-living', 'correct': 'l', 'words': 'words/jewellery_TR.wav'}, {'target': 'mainland', 'condition': 'non-living', 'correct': 'l', 'words': 'words/mainland_TR.wav'}, {'target': 'cinnamon', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cinnamon_TR.wav'}, {'target': 'fiber', 'condition': 'non-living', 'correct': 'l', 'words': 'words/fiber_TR.wav'}, {'target': 'bagel', 'condition': 'non-living', 'correct': 'l', 'words': 'words/bagel_TR.wav'}, {'target': 'casket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/casket_TR.wav'}, {'target': 'telegraph', 'condition': 'non-living', 'correct': 'l', 'words': 'words/telegraph_TR.wav'}, {'target': 'laptop', 'condition': 'non-living', 'correct': 'l', 'words': 'words/laptop_TR.wav'}, {'target': 'yearbook', 'condition': 'non-living', 'correct': 'l', 'words': 'words/yearbook_TR.wav'}, {'target': 'toothbrush', 'condition': 'non-living', 'correct': 'l', 'words': 'words/toothbrush_TR.wav'}, {'target': 'cocoa', 'condition': 'non-living', 'correct': 'l', 'words': 'words/cocoa_TR.wav'}, {'target': 'playground', 'condition': 'non-living', 'correct': 'l', 'words': 'words/playground_TR.wav'}, {'target': 'freezer', 'condition': 'non-living', 'correct': 'l', 'words': 'words/freezer_TR.wav'}, {'target': 'freeway', 'condition': 'non-living', 'correct': 'l', 'words': 'words/freeway_TR.wav'}, {'target': 'makeup', 'condition': 'non-living', 'correct': 'l', 'words': 'words/makeup_TR.wav'}, {'target': 'poster', 'condition': 'non-living', 'correct': 'l', 'words': 'words/poster_TR.wav'}, {'target': 'arrow', 'condition': 'non-living', 'correct': 'l', 'words': 'words/arrow_TR.wav'}, {'target': 'dynamite', 'condition': 'non-living', 'correct': 'l', 'words': 'words/dynamite_TR.wav'}, {'target': 'photograph', 'condition': 'non-living', 'correct': 'l', 'words': 'words/photograph_TR.wav'}, {'target': 'missile', 'condition': 'non-living', 'correct': 'l', 'words': 'words/missile_TR.wav'}, {'target': 'basket', 'condition': 'non-living', 'correct': 'l', 'words': 'words/basket_TR.wav'}, {'target': 'museum', 'condition': 'non-living', 'correct': 'l', 'words': 'words/museum_TR.wav'}, {'target': 'palace', 'condition': 'non-living', 'correct': 'l', 'words': 'words/palace_TR.wav'}, {'target': 'diamond', 'condition': 'non-living', 'correct': 'l', 'words': 'words/diamond_TR.wav'}, {'target': 'butter', 'condition': 'non-living', 'correct': 'l', 'words': 'words/butter_TR.wav'}, {'target': 'vehicle', 'condition': 'non-living', 'correct': 'l', 'words': 'words/vehicle_TR.wav'}, {'target': 'wallet', 'condition': 'non-living', 'correct': 'l', 'words': 'words/wallet_TR.wav'}, {'target': 'garage', 'condition': 'non-living', 'correct': 'l', 'words': 'words/garage_TR.wav'}, {'target': 'pizza', 'condition': 'non-living', 'correct': 'l', 'words': 'words/pizza_TR.wav'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="words.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="words"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="Part2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'target': 'coffee', 'condition': 'US', 'passagefile': 'passages/NewZealand_coffee.wav'}, {'target': 'ants', 'condition': 'US', 'passagefile': 'passages/NewZealand_ants.wav'}, {'target': 'romans', 'condition': 'US', 'passagefile': 'passages/NewZealand_romans.wav'}, {'target': 'otzi', 'condition': 'US', 'passagefile': 'passages/NewZealand_otzi.wav'}, {'target': 'kocs', 'condition': 'US', 'passagefile': 'passages/NewZealand_kocs.wav'}, {'target': 'coffee', 'condition': 'NZ', 'passagefile': 'passages/American_coffee.wav'}, {'target': 'ants', 'condition': 'NZ', 'passagefile': 'passages/American_ants.wav'}, {'target': 'romans', 'condition': 'NZ', 'passagefile': 'passages/American_romans.wav'}, {'target': 'otzi', 'condition': 'NZ', 'passagefile': 'passages/American_otzi.wav'}, {'target': 'kocs', 'condition': 'NZ', 'passagefile': 'passages/American_kocs.wav'}, {'target': 'coffee', 'condition': 'TR', 'passagefile': 'passages/Turkish_coffee.wav'}, {'target': 'ants', 'condition': 'TR', 'passagefile': 'passages/Turkish_ants.wav'}, {'target': 'romans', 'condition': 'TR', 'passagefile': 'passages/Turkish_romans.wav'}, {'target': 'otzi', 'condition': 'TR', 'passagefile': 'passages/Turkish_otzi.wav'}, {'target': 'kocs', 'condition': 'TR', 'passagefile': 'passages/Turkish_kocs.wav'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="passages.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="passages"/>
+    <LoopTerminator name="trials_2"/>
+  </Flow>
+</PsychoPy2experiment>
