@@ -404,13 +404,29 @@ trials = data.TrialHandler(nReps=1.0, method='random',
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
+
 # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
 if thisTrial != None:
     for paramName in thisTrial:
         exec('{} = thisTrial[paramName]'.format(paramName))
 
+# read in all words we need to see
+all_words = []
+with open('selected_words.txt') as f:
+    all_words = f.read().splitlines()
+
 for thisTrial in trials:
+
+    # check if the word has been said yet
+    if target in all_words:
+        # remove from list
+        all_words.remove(target)
+    else:
+        # otherwise, skip this trial
+        continue
+
     currentLoop = trials
+
     # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
     if thisTrial != None:
         for paramName in thisTrial:
@@ -419,12 +435,15 @@ for thisTrial in trials:
     # --- Prepare to start Routine "words" ---
     continueRoutine = True
     routineForceEnded = False
+
     # update component parameters for each repeat
     word_resp.keys = []
     word_resp.rt = []
     _word_resp_allKeys = []
-    wordlist.setSound('words.xlsx', hamming=True)
+
+    wordlist.setSound(wordfile, hamming=True)
     wordlist.setVolume(1.0, log=False)
+
     # keep track of which components have finished
     wordsComponents = [word_resp, wordlist]
     for thisComponent in wordsComponents:
