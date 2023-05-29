@@ -520,6 +520,11 @@ thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
 if thisTrial != None:
     for paramName in thisTrial:
         exec('{} = thisTrial[paramName]'.format(paramName))
+        
+# read in all words we need to see
+all_words = []
+with open('selected_words.txt') as f:
+    all_words = f.read().splitlines()
 
 for thisTrial in trials:
     currentLoop = trials
@@ -534,7 +539,7 @@ for thisTrial in trials:
     word_resp.keys = []
     word_resp.rt = []
     _word_resp_allKeys = []
-    wordlist.setSound('words.xlsx', hamming=True)
+    wordlist.setSound('wordfile', hamming=True)
     wordlist.setVolume(1.0, log=False)
     # keep track of which components have finished
     wordsComponents = [word_resp, wordlist]
@@ -571,7 +576,7 @@ for thisTrial in trials:
             word_resp.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(word_resp, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'word_resp.started')
+            thisExp.timestampOnFlip(win, 'wordlist.started')
             # update status
             word_resp.status = STARTED
             # keyboard checking is just starting
