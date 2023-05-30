@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
@@ -165,7 +165,7 @@ trustworthy = visual.Slider(win=win, name='trustworthy',
     flip=False, ori=0.0, depth=-4, readOnly=False)
 
 # --- Initialize components for Routine "samples" ---
-sample_sounds = sound.Sound('samples/samples.xlsx', secs=-1, stereo=True, hamming=True,
+sample_sounds = sound.Sound('samples.xlsx', secs=-1, stereo=True, hamming=True,
     name='sample_sounds')
 sample_sounds.setVolume(1.0)
 origin = visual.TextStim(win=win, name='origin',
@@ -402,6 +402,7 @@ trials = data.TrialHandler(nReps=1.0, method='random',
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('words.xlsx'),
     seed=None, name='trials')
+    
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
 
@@ -547,7 +548,7 @@ for thisTrial in trials:
     
 # completed 1.0 repeats of 'trials'
 
-
+'''
 # --- Prepare to start Routine "Part2" ---
 continueRoutine = True
 routineForceEnded = False
@@ -932,7 +933,7 @@ for thisTrial_3 in trials_3:
     
 # completed 1.0 repeats of 'trials_3'
 
-
+'''
 # --- Prepare to start Routine "thankyou" ---
 continueRoutine = True
 routineForceEnded = False
