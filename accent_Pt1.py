@@ -1,8 +1,9 @@
-﻿#!/usr/bin/env python
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.1.2),
-    on Mon May 29 15:37:06 2023
+    on Wed May 31 13:13:55 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -243,7 +244,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 word_rep = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=[None],
+    trialList=data.importConditions('words.xlsx'),
     seed=None, name='word_rep')
 thisExp.addLoop(word_rep)  # add the loop to the experiment
 thisWord_rep = word_rep.trialList[0]  # so we can initialise stimuli with some values
@@ -265,7 +266,7 @@ for thisWord_rep in word_rep:
     key_al.keys = []
     key_al.rt = []
     _key_al_allKeys = []
-    allwords.setSound('words.xlsx', hamming=True)
+    allwords.setSound(wordfile, hamming=True)
     allwords.setVolume(1.0, log=False)
     # keep track of which components have finished
     wordsComponents = [key_al, allwords]
