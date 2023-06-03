@@ -579,6 +579,7 @@ for thisTrial in trials:
     
     # --- Run Routine "words" ---
     while continueRoutine:
+        print("magyar_haz")
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -609,7 +610,9 @@ for thisTrial in trials:
                 word_resp.rt = _word_resp_allKeys[-1].rt
                 print(word_resp.keys)
                 # was this correct?
-                if (word_resp.keys == str(correct)) or (word_resp.keys == correct):
+                if str(word_resp.keys) in ['a','l']:
+                    word_resp.status = FINISHED
+                    wordlist.status = FINISHED
                     word_resp.corr = 1
                 else:
                     word_resp.corr = 0
@@ -662,6 +665,7 @@ for thisTrial in trials:
     # the Routine "words" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
+    print("Bertie")
     
 # completed 1.0 repeats of 'trials'
 
