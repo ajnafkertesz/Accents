@@ -95,6 +95,18 @@ eyetracker = None
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
+#initialize keyboard image components
+keyimage = visual.ImageStim(
+    win=win,
+    name='keyimage', 
+    image='default.png', mask=None, anchor='center',
+    ori=0.0, pos=(0, 0), size=(1, 1),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=128.0, interpolate=True, depth=0.0)
+
+keyimage.setImage('/Users/ajnafannikertesz/Desktop/Accents /leftrightim.png')
+
 # --- Initialize components for Routine "Welcome" ---
 Welcome_text = visual.TextStim(win=win, name='Welcome_text',
     text='Welcome to the study!\n\nThis study has two parts. In the first part you will have to categorize words upon hearing them, while in the second part you will listen and make judgments about short passages.  \n\n\nPress SPACE to begin.',
@@ -107,7 +119,7 @@ key_resp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "Part1" ---
 p1_instructions = visual.TextStim(win=win, name='p1_instructions',
-    text='Part 1\n\nIn this first part of the study you will hear words that are either living or non-living things. For living things press "A" and for non-living things press "L". This is a study measuring response time, so try to be as fast as possible. If you make an error you can correct yourself and the button you pressed last will be recorded.',
+    text='Part 1\n\nIn this first part of the study you will hear words that are either living or non-living things. For living things press the left key and for non-living things press the right key. This is a study measuring response time, so try to be as fast as possible.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -534,8 +546,12 @@ all_words = [
     "garage",
     "pizza"
 ]
-
+keyimage.autoDraw = True
 for thisTrial in trials:
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+    if thisTrial != None:
+        for paramName in thisTrial:
+            exec('{} = thisTrial[paramName]'.format(paramName))
     # check if the word has been said yet
     if target in all_words:
         # remove from list
@@ -546,10 +562,7 @@ for thisTrial in trials:
 
     currentLoop = trials
 
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-    if thisTrial != None:
-        for paramName in thisTrial:
-            exec('{} = thisTrial[paramName]'.format(paramName))
+    
     
     # --- Prepare to start Routine "words" ---
     continueRoutine = True
@@ -579,7 +592,6 @@ for thisTrial in trials:
     
     # --- Run Routine "words" ---
     while continueRoutine:
-        print("magyar_haz")
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -603,19 +615,19 @@ for thisTrial in trials:
             win.callOnFlip(word_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(word_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if word_resp.status == STARTED and not waitOnFlip:
-            theseKeys = word_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
+            theseKeys = word_resp.getKeys(keyList=['right', 'left'], waitRelease=False)
             _word_resp_allKeys.extend(theseKeys)
             if len(_word_resp_allKeys):
                 word_resp.keys = _word_resp_allKeys[-1].name  # just the last key pressed
                 word_resp.rt = _word_resp_allKeys[-1].rt
-                print(word_resp.keys)
                 # was this correct?
-                if str(word_resp.keys) in ['a','l']:
-                    word_resp.status = FINISHED
-                    wordlist.status = FINISHED
+                if (word_resp.keys == str(correct)) or (word_resp.keys == correct):
                     word_resp.corr = 1
                 else:
                     word_resp.corr = 0
+                if str(word_resp.keys) in ['right','left']:
+                    word_resp.status = FINISHED
+                    wordlist.status = FINISHED
         # start/stop wordlist
         if wordlist.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -665,9 +677,9 @@ for thisTrial in trials:
     # the Routine "words" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
-    print("Bertie")
     
 # completed 1.0 repeats of 'trials'
+keyimage.clearTextures()
 
 '''
 # --- Prepare to start Routine "Part2" ---
