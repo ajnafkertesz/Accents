@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
@@ -546,16 +546,36 @@ all_words = [
     "garage",
     "pizza"
 ]
+
+us_counter = 0
+nz_counter = 0
+tr_counter = 0
+
 keyimage.autoDraw = True
 for thisTrial in trials:
     # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
     if thisTrial != None:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
+
+    # check how many times the accent has been played
+    if us_counter == len(all_words)/3:
+        continue
+    elif nz_counter == len(all_words)/3:
+        continue
+    elif tr_counter == len(all_words)/3:
+        continue
+
     # check if the word has been said yet
     if target in all_words:
         # remove from list
         all_words.remove(target)
+        if accent == "US":
+            us_counter += 1
+        elif accent == "NZ":
+            nz_counter += 1
+        elif accent == "TR":
+            tr_counter += 1
     else:
         # otherwise, skip this trial
         continue
